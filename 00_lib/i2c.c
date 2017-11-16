@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "i2c.h" 
 
 I2C_Driver_T *m_i2c_drv = NULL;

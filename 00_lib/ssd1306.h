@@ -5,8 +5,8 @@
 #include <stdint.h>
 #include "i2c.h"
 #include "string.h"
-#include "util.h"
 #include "gui.h"
+#include "nrf_delay.h"
 
 #define SSD1306_BLACK       0
 #define SSD1306_WHITE       1

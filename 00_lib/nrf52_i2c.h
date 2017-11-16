@@ -1,17 +1,20 @@
-#ifndef __NRF_nrf_i2c_H__
-#define __NRF_nrf_i2c_H__
+#ifndef __NRF52_NRF_I2C_H__
+#define __NRF52_NRF_I2C_H__
 
 #include <stdio.h>
-#include "app_error.h" 
+#include "nrf_delay.h"
+#include "nrf_drv_twi.h" 
+#include "app_error.h"
+#include "app_util_platform.h"
 #include "nrf.h"
 #include "i2c.h"
 
-int nrf_i2c_init(uint8_t id); 
-int nrf_i2c_write_byte(uint8_t id, uint8_t addr, uint8_t value); 
-int nrf_i2c_read_byte(uint8_t id, uint8_t addr, uint8_t *value);
-int nrf_i2c_write(uint8_t id, uint8_t addr, uint8_t *buf, int len);
-int nrf_i2c_read(uint8_t id, uint8_t addr, uint8_t *buf, int len);
+int32_t nrf_i2c_init(uint8_t id); 
+int32_t nrf_i2c_write_byte(uint8_t id, uint8_t addr, uint8_t value); 
+int32_t nrf_i2c_read_byte(uint8_t id, uint8_t addr, uint8_t *value);
+int32_t nrf_i2c_write(uint8_t id, uint8_t addr, uint8_t *buf, int32_t len);
+int32_t nrf_i2c_read(uint8_t id, uint8_t addr, uint8_t *buf, int32_t len);
 
-extern I2C_Driver_T nrf_i2c_drv;
+extern I2C_Driver_T nrf52_i2c_drv;
 
-#endif//__NRF_nrf_i2c_H__
+#endif//__NRF52_NRF_I2C_H__

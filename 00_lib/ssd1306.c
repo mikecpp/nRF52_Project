@@ -1,8 +1,7 @@
 #include "ssd1306.h" 
-#include "esp_log.h"
 
 #define SSD1306_ADDR        0x3C
-#define sleep(val)          delay_ms(val)
+#define sleep(val)          nrf_delay_ms(val)
 #define SSD1306_WIDTH       128
 #define SSD1306_HEIGHT      64
 

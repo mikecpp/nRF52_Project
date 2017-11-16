@@ -1,6 +1,5 @@
 #include "gui.h"
 #include "fonts.h"
-#include "esp_log.h"
 
 #ifndef NULL
 #define NULL 0x00
@@ -53,7 +52,6 @@ static int32_t DrawChar(uint16_t Xpos, uint16_t Ypos, const uint8_t *c)
     uint8_t *data = malloc(width * height * 2);
     
     if(data == NULL) {
-        ESP_LOGE(TAG, "malloc() fail !");
         return -1;
     }    
     

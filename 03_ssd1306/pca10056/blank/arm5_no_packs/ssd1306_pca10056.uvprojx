@@ -335,7 +335,7 @@
               <MiscControls>--reduce_paths</MiscControls>
               <Define>BOARD_PCA10056 BSP_DEFINES_ONLY CONFIG_GPIO_AS_PINRESET NRF52840_XXAA</Define>
               <Undefine></Undefine>
-              <IncludePath>D:\nRF5_SDK_14.0.0\components;D:\nRF5_SDK_14.0.0\components\boards;D:\nRF5_SDK_14.0.0\components\drivers_nrf\common;D:\nRF5_SDK_14.0.0\components\drivers_nrf\delay;D:\nRF5_SDK_14.0.0\components\drivers_nrf\hal;D:\nRF5_SDK_14.0.0\components\drivers_nrf\nrf_soc_nosd;D:\nRF5_SDK_14.0.0\components\drivers_nrf\uart;D:\nRF5_SDK_14.0.0\components\libraries\atomic;D:\nRF5_SDK_14.0.0\components\libraries\balloc;D:\nRF5_SDK_14.0.0\components\libraries\bsp;D:\nRF5_SDK_14.0.0\components\libraries\experimental_log;D:\nRF5_SDK_14.0.0\components\libraries\experimental_log\src;D:\nRF5_SDK_14.0.0\components\libraries\experimental_memobj;D:\nRF5_SDK_14.0.0\components\libraries\experimental_section_vars;D:\nRF5_SDK_14.0.0\components\libraries\fifo;D:\nRF5_SDK_14.0.0\components\libraries\strerror;D:\nRF5_SDK_14.0.0\components\libraries\uart;D:\nRF5_SDK_14.0.0\components\libraries\util;D:\nRF5_SDK_14.0.0\components\toolchain;..\config</IncludePath>
+              <IncludePath>D:\nRF5_SDK_14.0.0\components;D:\nRF5_SDK_14.0.0\components\boards;D:\nRF5_SDK_14.0.0\components\drivers_nrf\common;D:\nRF5_SDK_14.0.0\components\drivers_nrf\delay;D:\nRF5_SDK_14.0.0\components\drivers_nrf\hal;D:\nRF5_SDK_14.0.0\components\drivers_nrf\nrf_soc_nosd;D:\nRF5_SDK_14.0.0\components\drivers_nrf\twi_master;D:\nRF5_SDK_14.0.0\components\drivers_nrf\uart;D:\nRF5_SDK_14.0.0\components\libraries\atomic;D:\nRF5_SDK_14.0.0\components\libraries\balloc;D:\nRF5_SDK_14.0.0\components\libraries\bsp;D:\nRF5_SDK_14.0.0\components\libraries\experimental_log;D:\nRF5_SDK_14.0.0\components\libraries\experimental_log\src;D:\nRF5_SDK_14.0.0\components\libraries\experimental_memobj;D:\nRF5_SDK_14.0.0\components\libraries\experimental_section_vars;D:\nRF5_SDK_14.0.0\components\libraries\fifo;D:\nRF5_SDK_14.0.0\components\libraries\strerror;D:\nRF5_SDK_14.0.0\components\libraries\uart;D:\nRF5_SDK_14.0.0\components\libraries\util;D:\nRF5_SDK_14.0.0\components\toolchain;..\config;..\..\..\..\00_lib</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -414,6 +414,11 @@
               <FileType>1</FileType>
               <FilePath>D:\nRF5_SDK_14.0.0\components\drivers_nrf\uart\nrf_drv_uart.c</FilePath>
             </File>
+            <File>
+              <FileName>nrf_drv_twi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>D:\nRF5_SDK_14.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -468,6 +473,41 @@
               <FileName>retarget.c</FileName>
               <FileType>1</FileType>
               <FilePath>D:\nRF5_SDK_14.0.0\components\libraries\uart\retarget.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\00_lib\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>nrf52_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\00_lib\nrf52_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>ssd1306.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\00_lib\ssd1306.c</FilePath>
+            </File>
+            <File>
+              <FileName>nrf52_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\00_lib\nrf52_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\00_lib\i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>font24.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\00_lib\font24.c</FilePath>
+            </File>
+            <File>
+              <FileName>gui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\00_lib\gui.c</FilePath>
             </File>
           </Files>
         </Group>

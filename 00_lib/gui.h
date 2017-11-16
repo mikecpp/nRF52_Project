@@ -6,6 +6,9 @@
 #endif 
 
 #include <stdint.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "fonts.h"
 
 typedef struct {
