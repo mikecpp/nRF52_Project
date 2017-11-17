@@ -1,9 +1,8 @@
 #ifndef __UTIL_H__
 #define __UTIL_H__
 
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
+#include "nrf_delay.h"
 
-void delay_ms();
+#define delay_ms(val)   nrf_delay_ms(val) 
 
 #endif//__UTIL_H__

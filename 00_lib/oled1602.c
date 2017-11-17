@@ -1,7 +1,6 @@
 #include <string.h>
-
-#include "oled1602.h" 
 #include "util.h"
+#include "oled1602.h" 
 
 // oled1602_commands
 #define LCD_CLEARDISPLAY        0x01
